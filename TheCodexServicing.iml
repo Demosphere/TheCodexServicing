@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="46196b37-e53b-49ee-9d3a-29da0ff165a7" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/resources/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Jersey-2.2" level="project" />
+    <orderEntry type="library" exported="" name="Hibernate 4.2.2-4.2.2" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="TomEE 7.0.63" level="application_server_libraries" />
+    <orderEntry type="library" exported="" name="gson-2.6.2" level="application" />
+    <orderEntry type="library" exported="" scope="TEST" name="junit" level="application" />
+    <orderEntry type="library" exported="" name="log4j" level="application" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-5.1.35-bin" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/ProjectDependencies/geronimo-osgi-locator-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="jackson" level="application" />
+    <orderEntry type="library" exported="" name="angular" level="application" />
+    <orderEntry type="library" exported="" name="angular-resource" level="application" />
+    <orderEntry type="library" exported="" name="angular-route" level="application" />
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+  </component>
+</module>
