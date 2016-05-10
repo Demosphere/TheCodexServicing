@@ -7,12 +7,12 @@ import entity.Level4;
 import org.apache.log4j.Logger;
 import persistence.AbstractDAO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
+ * This class is the basis for the Level REST client. It will handle all of the CRUD calls for the application.
  * Created by michaeld on 3/31/2016.
  */
 @Path("/Level")
@@ -24,6 +24,12 @@ public class LevelServices {
     private AbstractDAO<Level3> levelThreeDAO = new AbstractDAO<>(Level3.class);
     private AbstractDAO<Level4> levelFourDAO = new AbstractDAO<>(Level4.class);
 
+
+    /**
+     * This method will return a JSON object of the entire table structure. Any @GET attempts should result in this
+     * scructure being returned.
+     * @return JSON Level1
+     */
     @GET
     @Path("/One")
     @Produces(MediaType.APPLICATION_JSON)
@@ -33,6 +39,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levels);
     }
 
+    /**
+     * This method will take in a Level1 Entity object and insert it into the database.
+     * @param levelOne - Entity
+     * @return JSON Level1
+     */
     @PUT
     @Path("/One")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -43,6 +54,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelOne);
     }
 
+    /**
+     * This method will take in a Level1 Entity object and update that object corresponding database row.
+     * @param levelOne - Entity
+     * @return JSON Level1
+     */
     @POST
     @Path("/One")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -53,6 +69,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelOne);
     }
 
+    /**
+     * This method will take in a Level1 Entity object and delete that objects corresponding database row.
+     * @param levelOne - Entity
+     * @return JSON Level1
+     */
     @DELETE
     @Path("/One")
     @Consumes("text/plain")
@@ -68,6 +89,11 @@ public class LevelServices {
         }
     }
 
+    /**
+     * This method will take in a Level2 Entity object and insert that object into the database.
+     * @param levelTwo - Entity
+     * @return JSON Level2
+     */
     @PUT
     @Path("/Two")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -78,6 +104,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelTwo);
     }
 
+    /**
+     * This method will take in a Level2 Entity object and update that corresponding objects database row.
+     * @param levelTwo - Entity
+     * @return JSON Level2
+     */
     @POST
     @Path("/Two")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -88,6 +119,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelTwo);
     }
 
+    /**
+     * This method will take in a Level2 Entity object and update that corresponding objects database row.
+     * @param levelTwo - Entity
+     * @return JSON Level2
+     */
     @DELETE
     @Path("/Two")
     @Consumes("text/plain")
@@ -103,6 +139,11 @@ public class LevelServices {
         }
     }
 
+    /**
+     * This method will take in a Level3 Entity object and insert it into the database.
+     * @param levelThree - Entity
+     * @return JSON Level3
+     */
     @PUT
     @Path("/Three")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -113,6 +154,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelThree);
     }
 
+    /**
+     * This method will take in a Level3 Entity object and update its corresponding row in the database.
+     * @param levelThree - Entity
+     * @return JSON Level3
+     */
     @POST
     @Path("/Three")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -123,6 +169,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelThree);
     }
 
+    /**
+     * This method will take in a Level3 Entity object and delete its corresponding row in the database.
+     * @param levelThree - Entity
+     * @return JSON Level3
+     */
     @DELETE
     @Path("/Three")
     @Consumes("text/plain")
@@ -138,6 +189,11 @@ public class LevelServices {
         }
     }
 
+    /**
+     * This method will take in a Level4 Entity object and insert it into the database.
+     * @param levelFour - Entity
+     * @return JSON Level4
+     */
     @PUT
     @Path("/Four")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -148,6 +204,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelFour);
     }
 
+    /**
+     * This method will take in a Level4 Entity object and update its corresponding row in the database.
+     * @param levelFour - Entity
+     * @return JSON Level4
+     */
     @POST
     @Path("/Four")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -158,6 +219,11 @@ public class LevelServices {
         return mapper.writeValueAsString(levelFour);
     }
 
+    /**
+     * This method will take in a Level4 Entity object and delete its corresponding row in the database.
+     * @param levelFour - Entity
+     * @return JSON Level4
+     */
     @DELETE
     @Path("/Four")
     @Consumes("text/plain")

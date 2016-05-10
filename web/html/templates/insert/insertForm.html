@@ -1,0 +1,115 @@
+<form role="form">
+
+    <div class="form-group">
+        <label>Select Listing Table Level To Add:</label>
+        <select class="form-control" ng-model="setLevel" ng-init="setLevel = 'One'" ng-click="initClientLevel()">
+            <option value="One">1</option>
+            <option value="Two">2</option>
+            <option value="Three">3</option>
+            <option value="Four">4</option>
+        </select>
+        <br>
+    </div>
+
+    <div class="form-group"
+         ng-show="setLevel == 'Two'">
+        <label> Table Level1 Parent:</label>
+        <select class="form-control" ng-model="clientLevel.levelOneID">
+            <option ng-repeat="level1 in serverData"
+                    value="{{level1.levelOneID}}">
+                {{level1.levelOneID}} - {{level1.listingName}}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group" ng-show="setLevel == 'Three'">
+        <label> Table Level2 Parent Tree:</label>
+        <ol ng-repeat="level1 in serverData" ng-show="level1.levelTwo.length">Branch: {{level1.listingName}}:
+            <select class="form-control" ng-model="clientLevel.levelTwoID">
+                <option ng-repeat="levelTwo in level1.levelTwo" value="{{levelTwo.levelTwoID}}">
+                    {{levelTwo.levelTwoID}} - {{levelTwo.listingName}}
+                </option>
+            </select>
+        </ol>
+    </div>
+
+    <div class="form-group" ng-show="setLevel == 'Four'">
+        <label> Table Level3 Parent Tree:</label>
+        <ol ng-repeat="level1 in serverData" ng-show="level1.levelTwo.length">Branch: {{level1.listingName}}:
+            <ol ng-repeat="level2 in level1.levelTwo" ng-show="level2.levelThree.length">Branch: {{level2.listingName}}:
+                <select class="form-control" ng-model="clientLevel.levelThreeID">
+                    <option ng-repeat="levelThree in level2.levelThree" value="{{levelThree.levelThreeID}}">
+                        {{levelThree.levelThreeID}} - {{levelThree.listingName}}
+                    </option>
+                </select>
+            </ol>
+        </ol>
+    </div>
+
+    <div class="form-group">
+        <label>Name of Listing: </label>
+        <input class="form-control" ng-model="clientLevel.listingName">
+        <br>
+    </div>
+
+    <div class="form-group">
+        <label>Description of Listing: </label>
+        <textarea class="form-control" rows="10" ng-model="clientLevel.listingDescription" text=""></textarea>
+        <br>
+    </div>
+
+    <div class="form-group">
+        <label>Book Listing Is Location In: </label>
+        <input class="form-control" ng-model="clientLevel.bookName" text="">
+        <br>
+    </div>
+
+    <div class="form-group">
+        <label>Page Number Listing Is Located At: </label>
+        <input class="form-control" ng-model="clientLevel.pageNumber" value="0">
+        <br>
+    </div>
+
+    <blockquote>
+        <span ng-show="setLevel == 'One'">{'levelOneID': 0, </span>
+
+        <span ng-show="setLevel == 'Two'">{'levelTwoID' :  0
+        <br> 'levelOneID': , {{clientLevel.levelOneID}} </span>
+
+        <span ng-show="setLevel == 'Three'">{'levelThreeID' :  0
+        <br> 'levelTwoID': , {{clientLevel.levelTwoID}} </span>
+
+        <span ng-show="setLevel == 'Four'">{'levelFourID' :  0
+        <br> 'levelThreeID': , {{clientLevel.levelThreeID}} </span>
+
+        <br> 'listingName': '{{clientLevel.listingName}}',
+        <br> 'listingDescription': '{{clientLevel.listingDescription}}',
+        <br> 'versionID': 0,
+        <br> 'bookName': '{{clientLevel.bookName}}',
+        <span ng-show="setLevel == 'One' || setLevel == 'Two' || setLevel == 'Three'">
+        <br> 'pageNumber': {{clientLevel.pageNumber}},</span>
+        <span ng-show="setLevel == 'Four'"><br> 'pageNumber': {{clientLevel.pageNumber}}</span>
+
+        <span ng-show="setLevel == 'One'"><br> 'levelTwo' : []</span>
+        <span ng-show="setLevel == 'Two'"><br> 'levelThree' : []</span>
+        <span ng-show="setLevel == 'Three'"><br> 'levelFour' : []</span>
+        <br>}
+    </blockquote>
+
+    <button type="submit" class="btn btn-default" ng-click="sendLevelOne('PUT')"
+            ng-show="setLevel == 'One'">Submit Level 1
+    </button>
+    <button type="submit" class="btn btn-default" ng-click="sendLevelTwo('PUT')"
+            ng-show="setLevel == 'Two'">Submit Level 2
+    </button>
+    <button type="submit" class="btn btn-default" ng-click="sendLevelThree('PUT')"
+            ng-show="setLevel == 'Three'">Submit Level 3
+    </button>
+    <button type="submit" class="btn btn-default" ng-click="sendLevelFour('PUT')"
+            ng-show="setLevel == 'Four'">Submit Level 4
+    </button>
+    <br>
+    <br>
+    <button type="reset" class="btn btn-default" ng-click="resetForm()">Reset Form
+    </button>
+</form>

@@ -1,22 +1,19 @@
 package persistence;
 
-import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
-import org.hibernate.Session;
-import org.hibernate.Query;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.metadata.ClassMetadata;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
-import java.util.Map;
-
 /**
- * Created by Michael on 3/14/2016.
+ * This class will hold the session factory for database calls for this application.
  */
 public class SessionFactoryProvider {
     private static SessionFactory sessionFactory;
 
+    /**
+     * This will create a instance of the session factory.
+     */
     public static void createSessionFactory() {
         Configuration configuration = new Configuration();
         configuration.configure();
@@ -25,11 +22,13 @@ public class SessionFactoryProvider {
         sessionFactory = configuration.buildSessionFactory(serviceRegistry);
     }
 
+    /**
+     * This will retrieve a instance of the session factory.
+     */
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             createSessionFactory();
         }
         return sessionFactory;
-
     }
 }

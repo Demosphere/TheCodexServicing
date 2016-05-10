@@ -42,7 +42,7 @@
 
 <body>
 
-<div id="wrapper" ng-app="myApp">
+<div id="wrapper" ng-app="myApp" ng-controller="myCtrl as Ctrl" ng-init="getDataFromServer()">
 
     <!-- Navigation -->
     <div ng-include="'../html/templates/nav/navbar_container.html'"></div>
@@ -53,50 +53,20 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <div ng-include="'../html/templates/page_heading.html'"></div>
+            <div ng-show="displayView=='GET'"><div ng-include="'../html/templates/get/getHeader.html'"></div></div>
+            <div ng-show="displayView=='DELETE'"><div ng-include="'../html/templates/delete/deleteHeader.html'"></div></div>
+            <div ng-show="displayView=='UPDATE'"><div ng-include="'../html/templates/update/updateHeader.html'"></div></div>
+            <div ng-show="displayView=='INSERT'"><div ng-include="'../html/templates/insert/insertHeader.html'"></div></div>
             <!-- /.row -->
 
             <!-- Page Body -->
-            <div class="row" ng-controller="myCtrl as Ctrl" ng-init="getDataFromServer()">
+            <div class="row">
                 <div class="col-lg-12">
 
-                    <p>Link to a plunker with the angular that I put together to dynamically display my objects.</p>
-                    <p>http://plnkr.co/edit/4Pj6vSkndX3jBHNsupER?p=preview</p>
-
-                    <accordion close-others="false">
-                        <accordion-group heading="{{level1.levelOneID}} + {{level1.listingName}}" ng-repeat="level1 in serverData | orderBy : 'levelOneID' : -serverData" >
-                            <p ng-bind-html="level1.listingDescription | unsafe"></p>
-                            <ul>
-                                <accordion>
-                                    <accordion-group heading="{{level2.levelTwoID}} + {{level2.listingName}}"  ng-repeat="level2 in level1.levelTwo | orderBy : 'levelTwoID' : -level1.levelTwo">
-                                        <p ng-bind-html="level2.listingDescription | unsafe"></p>
-                                        <ul>
-                                            <accordion>
-                                                <accordion-group heading="{{level3.levelThreeID}} + {{level3.listingName}}" ng-repeat="level3 in level2.levelThree | orderBy : 'levelThreeID' : -level2.levelThree">
-                                                    <p ng-bind-html="level3.listingDescription | unsafe"></p>
-                                                    <ul>
-                                                        <accordion>
-                                                            <accordion-group heading="{{level4.levelFourID}} + {{level4.listingName}}" ng-repeat="level4 in level3.levelFour | orderBy : 'levelFourID' : -level3.levelFour">
-                                                                <p ng-bind-html="level4.listingDescription | unsafe"></p>
-                                                            </accordion-group>
-                                                        </accordion>
-                                                        <!-- /.accordion.level.four -->
-                                                    </ul>
-                                                </accordion-group>
-                                            </accordion>
-                                            <!-- /.accordion.level.three -->
-                                        </ul>
-                                    </accordion-group>
-                                </accordion>
-                                <!-- /.accordion.level.two -->
-                            </ul>
-                        </accordion-group>
-                    </accordion>
-                    <!-- /.accordion.level.one -->
-
-                    <br>
-                    <br>
-                    <p>Whole String : {{$scope.serverData}}</p>
+                    <div ng-show="displayView=='GET'"><div ng-include="'../html/templates/get/accodion.html'"></div></div>
+                    <div ng-show="displayView=='DELETE'"><div ng-include="'../html/templates/delete/deleteForm.html'"></div></div>
+                    <div ng-show="displayView=='UPDATE'"><div ng-include="'../html/templates/update/updateForm.html'"></div></div>
+                    <div ng-show="displayView=='INSERT'"><div ng-include="'../html/templates/insert/insertForm.html'"></div></div>
 
                 </div>
                 <!-- /.col -->

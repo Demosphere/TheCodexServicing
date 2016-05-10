@@ -1,10 +1,5 @@
 package entity;
 
-import com.google.gson.annotations.Expose;
-
-import javax.persistence.CascadeType;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
 import java.util.Set;
 
 /**

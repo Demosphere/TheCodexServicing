@@ -1,0 +1,134 @@
+2016-05-09 20:41:54,063 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-09 20:41:54,071 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-09 20:41:54,073 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-09 20:41:54,074 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-09 20:41:54,097 34   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,097 34   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,180 117  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:41:54,242 179  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:41:54,273 210  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:41:54,302 239  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:41:54,324 261  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:41:54,351 288  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,351 288  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,358 295  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:41:54,378 315  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:41:54,404 341  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:41:54,425 362  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:41:54,444 381  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:41:54,495 432  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,495 432  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,501 438  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:41:54,524 461  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:41:54,549 486  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:41:54,586 523  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:41:54,623 560  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:41:54,695 632  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,695 632  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,702 639  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:41:54,716 653  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:41:54,731 668  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:41:54,745 682  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:41:54,759 696  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:41:54,780 717  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,780 717  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:41:54,786 723  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:41:54,798 735  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:41:54,812 749  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:41:54,829 766  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:41:54,843 780  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:42:29,256 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-09 20:42:29,263 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-09 20:42:29,265 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-09 20:42:29,266 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-09 20:42:29,286 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:42:29,286 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:42:29,344 88   [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:42:29,410 154  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:42:29,430 174  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:42:29,450 194  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:42:29,463 207  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:42:29,478 222  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: UserRoles.hbm.xml
+2016-05-09 20:42:29,492 236  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-05-09 20:42:29,540 284  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 20:42:29,549 293  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2016-05-09 20:42:29,549 293  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-05-09 20:42:29,549 293  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/thecodex]
+2016-05-09 20:42:29,549 293  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=admin, password=****}
+2016-05-09 20:42:29,838 582  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-09 20:42:29,931 675  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-05-09 20:42:29,940 684  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-09 20:42:30,400 1144 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:30,401 1145 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:30,402 1146 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:30,402 1146 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:30,409 1153 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:30,409 1153 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:30,409 1153 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:30,409 1153 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:34,210 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-09 20:42:34,220 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-09 20:42:34,222 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-09 20:42:34,224 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-09 20:42:34,249 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:42:34,249 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:42:34,311 101  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:42:34,364 154  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:42:34,391 181  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:42:34,416 206  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:42:34,431 221  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:42:34,443 233  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: UserRoles.hbm.xml
+2016-05-09 20:42:34,458 248  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-05-09 20:42:34,510 300  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 20:42:34,517 307  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2016-05-09 20:42:34,517 307  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-05-09 20:42:34,517 307  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/thecodex]
+2016-05-09 20:42:34,518 308  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=admin, password=****}
+2016-05-09 20:42:34,831 621  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-09 20:42:34,944 734  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-05-09 20:42:34,952 742  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-09 20:42:35,400 1190 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:35,401 1191 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:35,402 1192 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:35,402 1192 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:35,426 1216 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:35,426 1216 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:35,426 1216 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:35,426 1216 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:35,433 1223 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:35,433 1223 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:35,434 1224 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:35,434 1224 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:54,417 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-09 20:42:54,424 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-09 20:42:54,426 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-09 20:42:54,427 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-09 20:42:54,447 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-09 20:42:54,447 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-09 20:42:54,505 88   [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-09 20:42:54,562 145  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-09 20:42:54,583 166  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-09 20:42:54,618 201  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-09 20:42:54,637 220  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-09 20:42:54,654 237  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: UserRoles.hbm.xml
+2016-05-09 20:42:54,670 253  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-05-09 20:42:54,730 313  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-09 20:42:54,740 323  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2016-05-09 20:42:54,740 323  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-05-09 20:42:54,740 323  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/thecodex]
+2016-05-09 20:42:54,740 323  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=admin, password=****}
+2016-05-09 20:42:55,060 643  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-09 20:42:55,154 737  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-05-09 20:42:55,159 742  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-09 20:42:55,616 1199 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:55,616 1199 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:55,618 1201 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:55,618 1201 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:55,644 1227 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:55,645 1228 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:55,645 1228 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:55,645 1228 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-09 20:42:55,652 1235 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-09 20:42:55,652 1235 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-09 20:42:55,652 1235 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-09 20:42:55,653 1236 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements

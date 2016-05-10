@@ -1,25 +1,20 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
         <li>
-            <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Home </a>
+            <a href="index.html" ng-click="setDisplayView('GET')"><i class="fa fa-fw fa-dashboard"></i> Home </a>
         </li>
         <li>
-            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Developer Tools <i class="fa fa-fw fa-caret-down"></i></a>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>
+                Developer Tools <i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="demo" class="collapse">
                 <li>
-                    <a href="AddLevel.html">Add a Level</a>
+                    <a href="index.html" ng-click="setDisplayView('INSERT')">Add a Level</a>
                 </li>
                 <li>
-                    <a href="DeleteLevel.html">Delete a Level</a>
+                    <a href="index.html" ng-click="setDisplayView('DELETE')">Delete a Level</a>
                 </li>
                 <li>
-                    <a href="UpdateLevel.html">Update a Level</a>
-                </li>
-                <li>
-                    <a href="blank-page.html">Blank Example Page</a>
-                </li>
-                <li>
-                    <a href="forms.html">Example of Form Controls</a>
+                    <a href="index.html" ng-click="setDisplayView('UPDATE')">Update a Level</a>
                 </li>
             </ul>
         </li>

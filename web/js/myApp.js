@@ -6,6 +6,9 @@ app.filter('unsafe', function ($sce) {
 
 app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $resource, $http) {
     $scope.clientLevel = {};
+    $scope.displayView = 'GET';
+    $scope.setLevel = '';
+    $scope.headerTitle = '';
 
     $scope.getDataFromServer = function () {
         var dataFromServer = $resource('/Level/One', {}, {query: {method: 'GET',isArray: true}})
@@ -16,8 +19,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
     };
 
     $scope.sendLevelOne = function (method) {
-        alert(method + "\n\n" + angular.toJson($scope.clientLevel));
-        var dataFromServer = $resource('/Level/One', {},{'call': {method: method, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}});
+        var dataFromServer = $resource('/Level/One', {},{'call': {method: method}});
         var response = dataFromServer.call({
             levelOneID: $scope.clientLevel.levelOneID,
             listingName: $scope.clientLevel.listingName,
@@ -29,7 +31,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
         });
         response.$promise.then(function (data) {
             $scope.serverData = angular.fromJson(data);
-            if($scope.serverData.status = 'FAIL') {
+            if($scope.serverData.status == 'FAIL') {
                 alert(angular.fromJson($scope.serverData));
             }
             $scope.getDataFromServer();
@@ -37,8 +39,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
     };
 
     $scope.sendLevelTwo = function (method) {
-        alert(method + "\n\n" + angular.toJson($scope.clientLevel));
-        var dataFromServer = $resource('/Level/Two', {}, {'call': {method: method, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}});
+        var dataFromServer = $resource('/Level/Two', {}, {'call': {method: method}});
         var response = dataFromServer.call({
             levelTwoID: $scope.clientLevel.levelTwoID,
             levelOneID: $scope.clientLevel.levelOneID,
@@ -51,7 +52,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
         });
         response.$promise.then(function (data) {
             $scope.serverData = angular.fromJson(data);
-            if($scope.serverData.status = 'FAIL') {
+            if($scope.serverData.status == 'FAIL') {
                 alert(angular.fromJson($scope.serverData));
             }
             $scope.getDataFromServer();
@@ -59,8 +60,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
     };
 
     $scope.sendLevelThree = function (method) {
-        alert(method + "\n\n" + angular.toJson($scope.clientLevel));
-        var dataFromServer = $resource('/Level/Three', {}, {'call': {method: method, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}});
+        var dataFromServer = $resource('/Level/Three', {}, {'call': {method: method}});
         var response = dataFromServer.call({
             levelThreeID: $scope.clientLevel.levelThreeID,
             levelTwoID: $scope.clientLevel.levelTwoID,
@@ -73,7 +73,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
         });
         response.$promise.then(function (data) {
             $scope.serverData = angular.fromJson(data);
-            if($scope.serverData.status = 'FAIL') {
+            if($scope.serverData.status == 'FAIL') {
                 alert(angular.fromJson($scope.serverData));
             }
             $scope.getDataFromServer();
@@ -81,8 +81,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
     };
 
     $scope.sendLevelFour = function (method) {
-        alert(method + "\n\n" + angular.toJson($scope.clientLevel));
-        var dataFromServer = $resource('/Level/Four', {}, {'call': {method: method, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}});
+        var dataFromServer = $resource('/Level/Four', {}, {'call': {method: method}});
         var response = dataFromServer.call({
             levelFourID: $scope.clientLevel.levelFourID,
             levelThreeID: $scope.clientLevel.levelThreeID,
@@ -94,7 +93,7 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
         });
         response.$promise.then(function (data) {
             $scope.serverData = angular.fromJson(data);
-            if($scope.serverData.status = 'FAIL') {
+            if($scope.serverData.status == 'FAIL') {
                 alert(angular.fromJson($scope.serverData));
             }
             $scope.getDataFromServer();
@@ -128,6 +127,10 @@ app.controller('myCtrl', ['$scope', '$resource', '$http', function ($scope, $res
 
     $scope.setClientLevel = function (inLevel) {
         $scope.clientLevel = angular.fromJson(inLevel);
+    }
+
+    $scope.setDisplayView = function (view) {
+        $scope.displayView = view.toString();
     }
 
     $scope.sendLevelOneDelete = function (method) {
