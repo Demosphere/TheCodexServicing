@@ -206,3 +206,30 @@
 2016-05-10 18:51:46,517 1100 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
 2016-05-10 18:51:46,517 1100 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
 2016-05-10 18:51:46,517 1100 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-11 17:05:59,779 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-11 17:05:59,786 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-11 17:05:59,788 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-11 17:05:59,789 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-11 17:05:59,809 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-11 17:05:59,810 31   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-11 17:05:59,872 93   [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-11 17:05:59,934 155  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-11 17:05:59,964 185  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-11 17:05:59,992 213  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-11 17:06:00,013 234  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-05-11 17:06:00,080 301  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-11 17:06:00,089 310  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2016-05-11 17:06:00,089 310  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-05-11 17:06:00,090 311  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/thecodex]
+2016-05-11 17:06:00,090 311  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=admin, password=****}
+2016-05-11 17:06:00,384 605  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-11 17:06:00,484 705  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-05-11 17:06:00,489 710  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-11 17:06:00,907 1128 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-11 17:06:00,907 1128 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-11 17:06:00,908 1129 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-11 17:06:00,908 1129 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-11 17:06:00,915 1136 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2016-05-11 17:06:00,916 1137 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
+2016-05-11 17:06:00,916 1137 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2016-05-11 17:06:00,916 1137 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements

@@ -39,11 +39,6 @@
         <mapping resource="Level4.hbm.xml"/>
         <mapping class="entity.Level4"/>
 
-        <mapping resource="User.hbm.xml"/>
-        <mapping class="entity.User"/>
-
-        <mapping resource="UserRoles.hbm.xml"/>
-        <mapping class="entity.UserRoles"/>
     </session-factory>
 
 </hibernate-configuration>
