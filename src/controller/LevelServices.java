@@ -15,7 +15,7 @@ import java.util.List;
  * This class is the basis for the Level REST client. It will handle all of the CRUD calls for the application.
  * Created by michaeld on 3/31/2016.
  */
-@Path("/Level")
+@Path("/html/Level")
 public class LevelServices {
     private final Logger log = Logger.getLogger(this.getClass());
     private ObjectMapper mapper = new ObjectMapper();
@@ -45,7 +45,7 @@ public class LevelServices {
      * @return JSON Level1
      */
     @PUT
-    @Path("/One")
+    @Path("/One/insert")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelOneInsert(Level1 levelOne) throws Exception {
@@ -60,7 +60,7 @@ public class LevelServices {
      * @return JSON Level1
      */
     @POST
-    @Path("/One")
+    @Path("/One/update")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelOneUpdate(Level1 levelOne) throws Exception {
@@ -74,16 +74,15 @@ public class LevelServices {
      * @param levelOne - Entity
      * @return JSON Level1
      */
-    @DELETE
-    @Path("/One")
-    @Consumes("text/plain")
+    @PUT
+    @Path("/One/delete")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String levelOneDelete(String levelOne) throws Exception {
-        Level1 levelToDelete = mapper.readValue(levelOne, Level1.class);
-        log.info("\n\n" + mapper.writeValueAsString(levelToDelete) + "\n\n");
-        if (levelToDelete.getLevelTwo().size() == 0) {
-            levelOneDAO.delete(levelToDelete);
-            return mapper.writeValueAsString(levelToDelete);
+    public String levelOneDelete(Level1 levelOne) throws Exception {
+        log.info("\n\n" + mapper.writeValueAsString(levelOne) + "\n\n");
+        if (levelOne.getLevelTwo().size() == 0) {
+            levelOneDAO.delete(levelOne);
+            return mapper.writeValueAsString(levelOne);
         } else {
             return "{'status' : 'FAIL'}";
         }
@@ -95,7 +94,7 @@ public class LevelServices {
      * @return JSON Level2
      */
     @PUT
-    @Path("/Two")
+    @Path("/Two/insert")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelTwoInsert(Level2 levelTwo) throws Exception {
@@ -110,7 +109,7 @@ public class LevelServices {
      * @return JSON Level2
      */
     @POST
-    @Path("/Two")
+    @Path("/Two/update")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelTwoUpdate(Level2 levelTwo) throws Exception {
@@ -124,16 +123,15 @@ public class LevelServices {
      * @param levelTwo - Entity
      * @return JSON Level2
      */
-    @DELETE
-    @Path("/Two")
-    @Consumes("text/plain")
+    @PUT
+    @Path("/Two/delete")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String levelTwoDelete(String levelTwo) throws Exception {
-        Level2 levelToDelete = mapper.readValue(levelTwo, Level2.class);
-        log.info("\n\n" + mapper.writeValueAsString(levelToDelete) + "\n\n");
-        if (levelToDelete.getLevelThree().size() == 0) {
-            levelTwoDAO.delete(levelToDelete);
-            return mapper.writeValueAsString(levelToDelete);
+    public String levelTwoDelete(Level2 levelTwo) throws Exception {
+        log.info("\n\n" + mapper.writeValueAsString(levelTwo) + "\n\n");
+        if (levelTwo.getLevelThree().size() == 0) {
+            levelTwoDAO.delete(levelTwo);
+            return mapper.writeValueAsString(levelTwo);
         } else {
             return "{'status' : 'FAIL'}";
         }
@@ -145,7 +143,7 @@ public class LevelServices {
      * @return JSON Level3
      */
     @PUT
-    @Path("/Three")
+    @Path("/Three/insert")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelThreeInsert(Level3 levelThree) throws Exception {
@@ -160,7 +158,7 @@ public class LevelServices {
      * @return JSON Level3
      */
     @POST
-    @Path("/Three")
+    @Path("/Three/update")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelThreeUpdate(Level3 levelThree) throws Exception {
@@ -174,16 +172,15 @@ public class LevelServices {
      * @param levelThree - Entity
      * @return JSON Level3
      */
-    @DELETE
-    @Path("/Three")
-    @Consumes("text/plain")
+    @PUT
+    @Path("/Three/delete")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String levelThreeDelete(String levelThree) throws Exception {
-        Level3 levelToDelete = mapper.readValue(levelThree, Level3.class);
-        log.info("\n\n" + mapper.writeValueAsString(levelToDelete) + "\n\n");
-        if (levelToDelete.getLevelFour().size() == 0) {
-            levelThreeDAO.delete(levelToDelete);
-            return mapper.writeValueAsString(levelToDelete);
+    public String levelThreeDelete(Level3 levelThree) throws Exception {
+        log.info("\n\n" + mapper.writeValueAsString(levelThree) + "\n\n");
+        if (levelThree.getLevelFour().size() == 0) {
+            levelThreeDAO.delete(levelThree);
+            return mapper.writeValueAsString(levelThree);
         } else {
             return "{'status' : 'FAIL'}";
         }
@@ -195,7 +192,7 @@ public class LevelServices {
      * @return JSON Level4
      */
     @PUT
-    @Path("/Four")
+    @Path("/Four/insert")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelFourInsert(Level4 levelFour) throws Exception {
@@ -210,7 +207,7 @@ public class LevelServices {
      * @return JSON Level4
      */
     @POST
-    @Path("/Four")
+    @Path("/Four/update")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String levelFourUpdate(Level4 levelFour) throws Exception {
@@ -224,14 +221,13 @@ public class LevelServices {
      * @param levelFour - Entity
      * @return JSON Level4
      */
-    @DELETE
-    @Path("/Four")
-    @Consumes("text/plain")
+    @PUT
+    @Path("/Four/delete")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String levelFourDelete(String levelFour) throws Exception {
-        Level4 levelToDelete = mapper.readValue(levelFour, Level4.class);
-        log.info("\n\n" + mapper.writeValueAsString(levelToDelete) + "\n\n");
-        levelFourDAO.delete(levelToDelete);
-        return mapper.writeValueAsString(levelToDelete);
+    public String levelFourDelete(Level4 levelFour) throws Exception {
+        log.info("\n\n" + mapper.writeValueAsString(levelFour) + "\n\n");
+        levelFourDAO.delete(levelFour);
+        return mapper.writeValueAsString(levelFour);
     }
 }

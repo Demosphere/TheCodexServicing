@@ -1,0 +1,61 @@
+CREATE TABLE thecodex.level1
+(
+    Level_One_ID INT(11) PRIMARY KEY NOT NULL,
+    Listing_Name VARCHAR(100) NOT NULL,
+    Listing_Description TEXT,
+    Version_ID INT(11),
+    Book_Name VARCHAR(50),
+    Page_Number INT(11)
+);
+CREATE INDEX level1_Level_One_ID_index ON thecodex.level1 (Level_One_ID);
+CREATE TABLE thecodex.level2
+(
+    Level_One_ID INT(11),
+    Level_Two_ID INT(11) PRIMARY KEY NOT NULL,
+    Listing_Name VARCHAR(100) NOT NULL,
+    Listing_Description TEXT,
+    Version_ID INT(11),
+    Book_Name VARCHAR(50),
+    Page_Number INT(11),
+    CONSTRAINT Level2_level1_Level_One_ID_fk FOREIGN KEY (Level_One_ID) REFERENCES level1 (Level_One_ID)
+);
+CREATE INDEX level2_Level_One_ID_index ON thecodex.level2 (Level_One_ID);
+CREATE INDEX level2_Level_Two_ID_index ON thecodex.level2 (Level_Two_ID);
+CREATE TABLE thecodex.level3
+(
+    Level_Two_ID INT(11),
+    Level_Three_ID INT(11) PRIMARY KEY NOT NULL,
+    Listing_Name VARCHAR(100) NOT NULL,
+    Listing_Description TEXT,
+    Version_ID INT(11),
+    Book_Name VARCHAR(50),
+    Page_Number INT(11),
+    CONSTRAINT level3_level2_Level_Two_ID_fk FOREIGN KEY (Level_Two_ID) REFERENCES level2 (Level_Two_ID)
+);
+CREATE INDEX level3_level2_Level_Two_ID_fk ON thecodex.level3 (Level_Two_ID);
+CREATE INDEX level3_Level_Three_ID_index ON thecodex.level3 (Level_Three_ID);
+CREATE TABLE thecodex.level4
+(
+    Level_Four_ID INT(11) PRIMARY KEY NOT NULL,
+    Level_Three_ID INT(11),
+    Listing_Name VARCHAR(100) NOT NULL,
+    Listing_Description TEXT,
+    Version_ID INT(11),
+    Book_Name VARCHAR(50),
+    Page_Number INT(11),
+    CONSTRAINT level4_level3_Level_Three_ID_fk FOREIGN KEY (Level_Three_ID) REFERENCES level3 (Level_Three_ID)
+);
+CREATE INDEX Level3_Level_Four_ID_index ON thecodex.level4 (Level_Four_ID);
+CREATE INDEX level4_level3_Level_Three_ID_fk ON thecodex.level4 (Level_Three_ID);
+CREATE INDEX level4_Level_Four_ID_index ON thecodex.level4 (Level_Four_ID);
+CREATE TABLE thecodex.users
+(
+    user_name VARCHAR(15) PRIMARY KEY NOT NULL,
+    user_pass VARCHAR(15) NOT NULL
+);
+CREATE TABLE thecodex.user_roles
+(
+    user_name VARCHAR(15) NOT NULL,
+    role_name VARCHAR(15) NOT NULL,
+    CONSTRAINT `PRIMARY` PRIMARY KEY (user_name, role_name)
+);

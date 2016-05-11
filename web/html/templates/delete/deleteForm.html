@@ -88,16 +88,16 @@
         <br>}
     </blockquote>
 
-    <button type="submit" class="btn btn-default" ng-click="sendLevelOneDelete('DELETE')"
+    <button type="submit" class="btn btn-default" ng-click="sendLevelOne('PUT', 'delete')"
             ng-show="setLevel == 'One'">Submit Level 1
     </button>
-    <button type="submit" class="btn btn-default" ng-click="sendLevelTwoDelete('DELETE')"
+    <button type="submit" class="btn btn-default" ng-click="sendLevelTwo('PUT', 'delete')"
             ng-show="setLevel == 'Two'">Submit Level 2
     </button>
-    <button type="submit" class="btn btn-default" ng-click="sendLevelThreeDelete('DELETE')"
+    <button type="submit" class="btn btn-default" ng-click="sendLevelThree('PUT', 'delete')"
             ng-show="setLevel == 'Three'">Submit Level 3
     </button>
-    <button type="submit" class="btn btn-default" ng-click="sendLevelFourDelete('DELETE')"
+    <button type="submit" class="btn btn-default" ng-click="sendLevelFour('PUT', 'delete')"
             ng-show="setLevel == 'Four'">Submit Level 4
     </button>
 </form>

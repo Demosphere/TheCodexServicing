@@ -132,3 +132,77 @@
 2016-05-09 20:42:55,652 1235 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '1' for key 'PRIMARY'
 2016-05-09 20:42:55,652 1235 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.ConstraintViolationException: could not execute statement
 2016-05-09 20:42:55,653 1236 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-10 18:50:59,271 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-10 18:50:59,279 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-10 18:50:59,281 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-10 18:50:59,282 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-10 18:50:59,302 31   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-10 18:50:59,302 31   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-10 18:50:59,368 97   [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-10 18:50:59,421 150  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-10 18:50:59,445 174  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-10 18:50:59,465 194  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-10 18:50:59,487 216  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-10 18:50:59,518 247  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: UserRoles.hbm.xml
+2016-05-10 18:50:59,540 269  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-05-10 18:50:59,603 332  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 18:50:59,611 340  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2016-05-10 18:50:59,611 340  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-05-10 18:50:59,611 340  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.3.72.130:3306/thecodex]
+2016-05-10 18:50:59,612 341  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=admin7KpuaQE, password=****}
+2016-05-10 18:50:59,933 662  [main] WARN  org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - HHH000342: Could not obtain connection to query metadata : Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:50:59,945 674  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-10 18:50:59,958 687  [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000422: Disabling contextual LOB creation as connection was null
+2016-05-10 18:51:00,047 776  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-05-10 18:51:00,054 783  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-10 18:51:00,416 1145 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:00,416 1145 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:00,417 1146 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:00,424 1153 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:00,424 1153 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:00,424 1153 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:00,429 1158 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:00,429 1158 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:00,429 1158 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:00,448 1177 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:00,448 1177 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:00,459 1188 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:00,459 1188 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:00,460 1189 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:45,417 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2016-05-10 18:51:45,423 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.2.2.Final}
+2016-05-10 18:51:45,425 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-10 18:51:45,427 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-10 18:51:45,451 34   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-05-10 18:51:45,451 34   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-05-10 18:51:45,506 89   [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level1.hbm.xml
+2016-05-10 18:51:45,561 144  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level2.hbm.xml
+2016-05-10 18:51:45,588 171  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level3.hbm.xml
+2016-05-10 18:51:45,604 187  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: Level4.hbm.xml
+2016-05-10 18:51:45,620 203  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: User.hbm.xml
+2016-05-10 18:51:45,635 218  [main] INFO  org.hibernate.cfg.Configuration  - HHH000221: Reading mappings from resource: UserRoles.hbm.xml
+2016-05-10 18:51:45,650 233  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-05-10 18:51:45,705 288  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-05-10 18:51:45,713 296  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2016-05-10 18:51:45,713 296  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-05-10 18:51:45,714 297  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://127.3.72.130:3306/thecodex]
+2016-05-10 18:51:45,714 297  [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=admin7KpuaQE, password=****}
+2016-05-10 18:51:45,962 545  [main] WARN  org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - HHH000342: Could not obtain connection to query metadata : Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:45,970 553  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-10 18:51:45,984 567  [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000422: Disabling contextual LOB creation as connection was null
+2016-05-10 18:51:46,080 663  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-05-10 18:51:46,087 670  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-10 18:51:46,476 1059 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:46,477 1060 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:46,478 1061 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:46,485 1068 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:46,485 1068 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:46,485 1068 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:46,489 1072 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:46,489 1072 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:46,489 1072 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
+2016-05-10 18:51:46,510 1093 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:46,510 1093 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:46,517 1100 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1045, SQLState: 28000
+2016-05-10 18:51:46,517 1100 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Access denied for user 'admin7KpuaQE'@'localhost' (using password: YES)
+2016-05-10 18:51:46,517 1100 [main] ERROR persistence.AbstractDAO  - org.hibernate.exception.GenericJDBCException: Could not open connection
