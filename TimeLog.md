@@ -26,5 +26,14 @@
 |4/30/16| Individual project work, can display and accept more data, worked on straightening some things out again and through issues with angular libraries not working | 6 ||
 |5/1/16| Individual project work, can now display and accept data for all levels of my tables | 7||
 |5/2/16| Refactored project for efficiency and code reusability (needs more work), fixed bug with adding, started to work on deleting levels | 2.5 ||
+|5/3|Got deletes to work....kinda|3||
+|5/4|Got updates to work....kinda|3||
+|5/5|fixed issues with hibernate, jersy, json and angular|3||
+|5/6|countiued and finished fixes for my CRUD functionality. I can now add update and delete mostly without issue.|3||
+|5/7|researced how to use a REST service with angular nicly|4||
+|5/8|spent the entire day refactoring my project into a REST application|12||
+|5/9|refactored classes for code resusability|3||
+|5/10|refactored project with issues that occured when I was attempting to deploy to openshift|5||
+|5/11|got the security portion to work because of people in class|1||
 |||||
 |||||
