@@ -48,3 +48,27 @@
 - [ ] Finish adding the "description" layer in the database.
 - [ ] Code the dice rolling portion of the web app.
 - [ ] Deploy to openshift
+
+### Week 11
+- [X] rethink project
+
+### Week 12
+- [X] wait longer to start working on this seriously 
+- [X] Take PTO for week 14 so I can start working on this seriously in the future.
+
+### Week 13
+- [X] Take a break from working on this seriously
+
+### Week 14
+- [X] Work on this seriously.
+- [X] Take PTO
+- [X] Work on the project all day on PTO days to get minimum functionality.
+
+### Week 15
+- [X] Get more functionality together.
+- [X] Figure out a REST service and implement it.
+- [X] Finish the CRUD pages so that they work correctly with angular.
+
+### Week 16
+- [X] Refactor everything for code reusablity.
+- [X] Deploy to openshift
