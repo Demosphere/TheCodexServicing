@@ -34,3 +34,8 @@ Again, I need to get back into the habit of doing my HW on Sunday mornings so th
   - Theorized more on the database structure that I would need in order to facilitate the game system that I am going to be recreating with the web site.
   - Tried to narrow the scope of the individual project in order to make sure that I actually get stufff done for the project and don't get overwhelmed.
   - didn't get anything done on sunday like I wanted to do cause I am lazy and can't get back into habits after I breadk them.
+
+### Week 3 - 16
+
+- Please reference my timelog, it will give you an idea of when I worked on the project exactly and any think that I did on the project. 
+- https://github.com/Demosphere/TheCodexServicing/blob/master/TimeLog.md
